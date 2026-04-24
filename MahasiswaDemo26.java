@@ -63,5 +63,6 @@ public class MahasiswaDemo26 {
                     System.out.println("Pilihan tidak valid");
             } 
         } while (pilih >= 1 && pilih <= 6);
+        scan.close();
     }
 }
