@@ -5,7 +5,7 @@ public class Mahasiswa26 {
     int nilai;
     Mahasiswa26(){
     }
-    public Mahasiswa26(String nim, String nama, String kelas) {
+    public Mahasiswa26(String nama, String nim, String kelas) {
         this.nim = nim;
         this.nama = nama;
         this.kelas = kelas;

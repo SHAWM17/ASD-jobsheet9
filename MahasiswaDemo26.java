@@ -10,7 +10,7 @@ public class MahasiswaDemo26 {
             System.out.println("2. Menilai tugas");
             System.out.println("3. Melihat tugas teratas");
             System.out.println("4. Menampilkan daftar tugas");
-            System.out.println("Pilih: ");
+            System.out.print("Pilih: ");
             pilih = scan.nextInt();
             scan.nextLine(); // membersihkan buffer
             switch (pilih) {
@@ -46,9 +46,20 @@ public class MahasiswaDemo26 {
                     System.out.println("Nama\tNIM\tKelas");
                     stack.print();
                     break;
+                case 5:
+                    Mahasiswa26 bawah = stack.peekBottom();
+                    if (bawah != null) {
+                        System.out.println("Tugas pertama kali dikumpulkan oleh: " + bawah.nama);
+                    }
+                break;
+
+                case 6:
+                    int jumlah = stack.getCount();
+                    System.out.println("Jumlah tugas yang sudah dikumpulkan: " + jumlah);
+                    break;
                 default:
                     System.out.println("Pilihan tidak valid");
             } 
-        } while (pilih >= 1 && pilih <= 4);
+        } while (pilih >= 1 && pilih <= 6);
     }
 }
